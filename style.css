@@ -52,7 +52,7 @@ p {
   background-color: #cbcbcb;
   box-shadow: 1px 1px 15px #62615e;
   padding: 10px 10px 10px 10px;
-  height: 110px;
+  height: 150px;
   width: 750px;
   transition: all 0.3s;
 }
@@ -61,7 +61,7 @@ p {
   background-color: #cbcbcb;
   box-shadow: 1px 1px 15px #62615e;
   padding: 10px 10px 10px 10px;
-  height: 77px;
+  height: 316px;
   width: 750px;
   align-self: flex-end;
   transition: all 0.3s;
