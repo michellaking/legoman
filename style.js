@@ -9,3 +9,19 @@ function scrollFunction() {
     navBar.style.transform = "translateY(-50px)";
   }
 }
+
+document.querySelectorAll(".opgaven").forEach((box) => {
+  const p = box.querySelector("p");
+  const arrow = box.querySelector(".arrow");
+  const boxheight = p.clientHeight;
+  p.style.height = "0px";
+  box.addEventListener("mouseenter", () => {
+    arrow.style.transform = "rotate(180deg)";
+    p.style.height = boxheight + "px";
+  });
+
+  box.addEventListener("mouseleave", () => {
+    arrow.style.transform = "rotate(0deg)";
+    p.style.height = "0px";
+  });
+});

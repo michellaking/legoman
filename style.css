@@ -4,23 +4,26 @@
 }
 
 body {
-  background-color: #b37fb1;
+  background-color: #c598c7;
 }
 
 #navbar {
   background-color: #ffffff;
   display: flex;
   position: sticky;
-top: 0;
-transform:translateY(-50px);
-  z-index: 1;
+  top: 0;
+  transform: translateY(-50px);
+  z-index: 4;
   justify-content: center;
   width: 100%;
   gap: 30px;
   transition: all 0.3s;
+  box-shadow: 1px 1px 15px #62615e;
 }
 
 #navbar a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   transition: all 0.3s;
   display: block;
   color: rgb(0, 0, 0);
@@ -68,10 +71,10 @@ h2 {
   transition: all 0.3s;
   margin: 0px auto 100px;
   width: fit-content;
+  scroll-margin: 20vh;
 }
 
-h3,
-h4 {
+h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   margin-bottom: 10px;
@@ -83,14 +86,24 @@ p {
 }
 
 .logo-gif {
+  margin: auto;
+  width: 75%;
   display: block;
+  position: relative;
   margin-bottom: 40px;
+}
+
+.logo-gif::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  box-shadow: 0 0 11px 15px #c598c7 inset;
 }
 
 .logo-gif img {
   display: block;
-  margin: auto;
-  width: 85%;
+  width: 100%;
   filter: saturate(170%);
 }
 
@@ -99,32 +112,31 @@ p {
   border: solid 1px black;
   box-shadow: 1px 1px 15px #62615e;
   padding: 10px 10px 10px 10px;
-  height: 170px;
   width: 750px;
   margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+.opgaven p {
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.opgaven h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.opgaven .arrow {
+  transition: all 0.3s;
 }
 
 .opgaven-container {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-}
-
-.hvordan {
-  background-color: rgb(235, 216, 133);
-  border: solid 1px black;
-  box-shadow: 1px 1px 15px #62615e;
-  padding: 10px 10px 10px 10px;
-  height: 250px;
-  width: 750px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.hvordan-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  scroll-margin: 20vh;
 }
 
 .pic-container {
@@ -134,6 +146,7 @@ p {
   margin: 30px auto 100px;
   width: 75%;
   gap: 45px;
+  scroll-margin: 40vh;
 }
 
 .pic-container img {
@@ -156,10 +169,15 @@ p {
   display: block;
   margin-bottom: 40px;
   margin-top: 40px;
+  scroll-margin: 20vh;
 }
 
 .poster img {
   display: block;
   margin: auto;
   width: 30%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
