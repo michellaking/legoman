@@ -25,3 +25,35 @@ document.querySelectorAll(".opgaven").forEach((box) => {
     p.style.height = "0px";
   });
 });
+
+const range = document.querySelector("#range");
+const turnImg = document.querySelector("#turn-img");
+range.addEventListener("input", function () {
+  console.log(this.value);
+  let extraDigit = "0";
+  if (this.value > 99) {
+    extraDigit = "";
+  } else {
+    extraDigit = "0";
+  }
+  turnImg.setAttribute(
+    "src",
+    "./img/turntable-brown/00" + extraDigit + this.value + ".jpg"
+  );
+});
+
+const rangepink = document.querySelector("#rangepink");
+const turnpinkImg = document.querySelector("#turnpink-img");
+rangepink.addEventListener("input", function () {
+  console.log(this.value);
+  let extraDigit = "0";
+  if (this.value > 99) {
+    extraDigit = "";
+  } else {
+    extraDigit = "0";
+  }
+  turnpinkImg.setAttribute(
+    "src",
+    "./img/turntable-pink/00" + extraDigit + this.value + ".jpg"
+  );
+});

@@ -19,7 +19,7 @@
     <main>
       <div id="navbar">
         <a href="#filmen">Filmen</a>
-        <a href="#karakterene">Karakterene</a>
+        <a href="#flex-wrapper">Karakterene</a>
         <a href="#projektet">Projektet</a>
         <a href="#plakat">Plakat</a>
       </div>
@@ -45,7 +45,35 @@
       </div>
 
       <hr class="solid" />
-      <div id="karakterene" class="pic-container">INDSÆT TURNTABLES</div>
+      <div class="flex-wrapper" id="flex-wrapper">
+        <div class="turntable-wrapper">
+          <figure>
+            <div class="turntable">
+              <img src="./img/turntable-brown/0001.jpg" alt="" id="turn-img" />
+            </div>
+          </figure>
+          <input type="range" name="" id="range" min="1" max="300" value="1" />
+        </div>
+        <div class="turntable-wrapper">
+          <figure>
+            <div class="turntable">
+              <img
+                src="./img/turntable-pink/0001.jpg"
+                alt=""
+                id="turnpink-img"
+              />
+            </div>
+          </figure>
+          <input
+            type="range"
+            name=""
+            id="rangepink"
+            min="1"
+            max="300"
+            value="1"
+          />
+        </div>
+      </div>
 
       <hr class="solid" />
 
