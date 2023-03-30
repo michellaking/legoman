@@ -70,8 +70,12 @@ h2 {
   box-shadow: 1px 1px 15px #62615e;
   transition: all 0.3s;
   margin: 0px auto 100px;
-  width: fit-content;
+  width: 55%;
   scroll-margin: 20vh;
+}
+
+.lego-video video {
+  width: 100%;
 }
 
 h3 {
